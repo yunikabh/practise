@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="abc()" id="b">on</button>
+    <ul style="display: none;" id="a">
+    <li>home</li> <li>home</li> <li>home</li>
+</ul>
+    <script>
+function abc(){
+    if(document.getElementById('a').style.display=='none'){
+        document.getElementById('a').style.display='block'
+        document.getElementById('b').innerHTML='OFF'
+    }
+    else{
+        document.getElementById('a').style.display='none'
+        document.getElementById('b').innerHTML='ON'
+    
+    }
+}
+    </script>
+</body>
+</html>
